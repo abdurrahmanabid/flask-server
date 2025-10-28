@@ -5,7 +5,7 @@ import joblib
 @lru_cache(maxsize=1)
 def get_cnn_model():
     # compile=False to speed up load; you only need predict
-    return load_model("models/all_dataset_cnn.keras", compile=False)
+    return load_model("models/mobilenetv2.keras", compile=False)
 
 @lru_cache(maxsize=1)
 def get_label_encoders():
